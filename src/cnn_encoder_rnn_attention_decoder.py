@@ -411,7 +411,7 @@ def cnn_encoder_decoder_argparser():
     # parser = argparse.ArgumentParser(description='Run Tests')
     parser = HyperOptArgumentParser(description='Run Tests', strategy='grid_search')
     
-    parser.add_argument('--name', help="experiment name", default="rnn_encoder_decoder")    
+    parser.add_argument('--name', help="experiment name", default="cnn_encoder_rnn_attention_decoder")    
     parser.add_argument('--test', help="Run test instead of training/validation", action="store_true")
     parser.add_argument("--njobs", help="Number of jobs to use when loading data", type=int, default=1)
     parser.add_argument("--epoch", help="Number of epoch to run", type=int, default=10000)
